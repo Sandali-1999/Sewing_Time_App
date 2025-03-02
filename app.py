@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 # Load the trained decision tree model
-pickle_in = open("best_dt_model_LightGBM.pkl", "rb")
+pickle_in = open("best_model_LightGBM.pkl", "rb")
 best_dt_model_LightGBM = pickle.load(pickle_in)
 
 def predict_sewing_time(features):
